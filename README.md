@@ -1,12 +1,21 @@
 
-# DNK Protocol v2 (DNA-style Sealed Round-Trip)
+# DNK Protocol v2.1 (DNA-style Sealed Round-Trip with Enhancements)
 
-This repository serves as public disclosure (prior art) of the
-unique DNK Protocol v2 architecture developed by Anton Dovgopol (2.Марксандрович, Ukraine).
+This is an updated version of the DNK Protocol by Dovgopol Anton Aleksandrovich (Ukraine),
+which implements DNA-style chained sealed round-trip mutual verification.
 
-- DNA-style chained sealed round-trip mutual verification.
-- Multi-layer: HMAC (SHA-256/SHA3-512/BLAKE2b) + AES (CBC/GCM) segments chained via checksums.
-- Ensures zero tamper for portable AI contexts, banking escrow, IoT command chains.
+## 🚀 What's new in v2.1:
+- Added JSON-based nonce pool for more robust anti-replay protection.
+- Strengthened DNA checksum using double HMAC and optional BLAKE3.
+- Introduced formal spec file (DNK_SPEC.md) describing the protocol structure.
+- Added JSON config (dnk_config.json) for easy tuning by banks or IoT systems.
 
-Ownership proof and SHA-256 hash included to establish authorship and priority as of July 2, 2025.
-Contact: gpt4officials@gmail.com
+This architecture is designed for:
+- Portable AI memory synchronization across devices
+- Banking escrow multi-step verification
+- IoT command integrity with anti-tamper chains
+
+## 📜 Ownership
+Author: Dovgopol Anton Aleksandrovich (Ukraine)
+Email: gpt4officials@gmail.com
+Phone: +380957052757

@@ -1,0 +1,6 @@
+{
+    "HMAC_ALGO": "blake2b",
+    "AES_MODE": "GCM",
+    "NONCE_EXPIRY_SECONDS": 86400,
+    "DNA_CHECKSUM_EXTRA": true
+}
